@@ -11,7 +11,9 @@ the byte value at this offset.
 The memory byte write function gets the same parameters and the value that needs to be written to the memory byte.
 The manager must control the correctness of memory accesses: when there is going out of block boundaries or
 specifying a non-existent block, diagnostics should be printed and the program should be terminated (by calling the function exit).
+
 2. Write one more program module that extends the module from item 1 with the block reallocation function.
 The function receives a block descriptor and a new size as input. The function returns 0 on success and non-zero
 number on failure. The function does not change the block descriptor.
+
 3. Using the module from item 2, solve the problem: print the longest input line.
