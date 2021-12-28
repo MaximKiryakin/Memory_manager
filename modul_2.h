@@ -1,0 +1,1 @@
+int reallocc (int descriptor, int new_size);
